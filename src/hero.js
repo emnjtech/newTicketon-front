@@ -58,19 +58,19 @@ const navigate = useNavigate()
     }
 
     const handleOutdoor = () => {
-        navigate('/Picknics', { state: 'Outdoor & Picknick' })
+        navigate('/Picnics', { state: 'Outdoor & Picnic' })
     }
 
     const handleFood = () => {
-        navigate('/foodAndBeverages', { state: 'Food & Beverages' })
+        navigate('/foodAndBeverages', { state:'Food & Beverages' })
     }
 
     const handleSeminars = () => {
-        navigate('/seminars', { state:     'Seminars & Workshops' })
+        navigate('/seminars', { state:'Seminars & Workshops' })
     }
 
     const handleReligion = () => {
-        navigate('/religion', { state: 'Religion & Spiritual' })
+        navigate('/religion', { state:'Religion & Spiritual' })
     }
 
 
@@ -99,7 +99,7 @@ const navigate = useNavigate()
 
                     <Hint options={hintCountry} allowTabFill allowEnterFill>
                     <input type="text" className=" h-full box-border p-3 outline-none md:border-r-2 md:rounded-none 
-                  rounded-r-full shadow-xl md:shadow-none text-sm w-full" placeholder="Host country.."
+                  rounded-r-full shadow-xl md:shadow-none text-sm w-full" placeholder="Host country..."
                             value={searchCountry}
                             onChange={e => setSearchCountry(e.target.value)}
                            
@@ -111,7 +111,7 @@ const navigate = useNavigate()
                     <div className='md:flex grid md:justify-between md:gap-0 gap-4 '>
                         <Hint options={hintState} allowTabFill allowEnterFill>
                         <input type="text" className="shadow-xl 
-                  rounded-b-full h-full box-border p-3 outline-none md:shadow-none w-full text-sm" placeholder="Host province/state"
+                  rounded-b-full h-full box-border p-3 outline-none md:shadow-none w-full text-sm" placeholder="Host province/state..."
                                 value={searchProvince}
                                 onChange={e => setSearchProvince(e.target.value)}
                             />
@@ -156,7 +156,7 @@ const navigate = useNavigate()
                       
                         <div className='flex items-center justify-center cursor-pointer' onClick={handleOutdoor}> 
                         <Icon icon="fontisto:cocktail" className='text-5xl  px-2 text-white' /></div>
-                            <h1 className='md:text-[11px] text-[6px]  text-center'>OUTDOOR & PICNICK</h1>
+                            <h1 className='md:text-[11px] text-[6px]  text-center'>OUTDOOR & PICNIC</h1>
                        
                     </div>
                     <div >

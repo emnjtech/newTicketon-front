@@ -72,7 +72,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                            <Icon icon="entypo:share" className='text-2xl cursor-pointer' onClick={popShareDiv} />
                            <div className={!shareDiv ? 'hidden' : 'p-4 w-[50%] rounded-br-full h-[100px] grid grid-cols-3 shadow-xl roll-in-blurred-left'}>
                                <FacebookShareButton
-                                   url={`/eventSummary/${eventId}`}
+                                   url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                    quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                    hashtag="#event">
 
@@ -81,7 +81,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                                </FacebookShareButton>
 
                                <TwitterShareButton
-                                   url={`/eventSummary/${eventId}`}
+                                   url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                    quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                    hashtag="#event">
 
@@ -91,7 +91,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                                </TwitterShareButton>
 
                                <WhatsappShareButton
-                                   url={`/eventSummary/${eventId}`}
+                                   url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                    quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                    hashtag="#event">
 
@@ -101,7 +101,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                                </WhatsappShareButton>
 
                                <TelegramShareButton
-                                   url={`/eventSummary/${eventId}`}
+                                   url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                    quote={"You are invited to this" + { title } + "Click to your tickets now"}
                                    hashtag="#event">
 
@@ -111,7 +111,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                                </TelegramShareButton>
 
                                <EmailShareButton
-                                   url={`/eventSummary/${eventId}`}
+                                   url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                    quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                    hashtag="#event">
 
@@ -120,7 +120,7 @@ export default function SearchComponent({ title, eventId, image, artiste, dateAn
                                    <EmailIcon size={30} round={true} logoFillColor="white" className="p-1" />
                                </EmailShareButton>
                            </div>
-                           <Link to="eventSummary"> <button className='flex items-center justify-between px-4 py-2 rounded-full bg-[#C25DC4]'><Icon icon="material-symbols:event-available-rounded" className='text-2xl p-1 ' />
+                           <Link to={`/eventSummary/${eventId}`}> <button className='flex items-center justify-between px-4 py-2 rounded-full bg-[#C25DC4]'><Icon icon="material-symbols:event-available-rounded" className='text-2xl p-1 ' />
                                <h1 className='text-[12px]'>Get Info</h1></button></Link>
 
                        </div>

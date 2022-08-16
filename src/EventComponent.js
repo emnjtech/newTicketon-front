@@ -89,7 +89,7 @@ export default function EventComponent({ title, eventId, image, artiste, dateAnd
                         <Icon icon="entypo:share" className='text-2xl cursor-pointer' onClick={popShareDiv}/>
                         <div className={!shareDiv ? 'hidden' : 'p-4 w-[50%] rounded-br-full h-[100px] grid grid-cols-3 shadow-xl roll-in-blurred-left'}>
                                 <FacebookShareButton
-                                    url={`/eventSummary/${eventId}`}
+                                    url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                     quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                     hashtag="#event">
 
@@ -98,7 +98,7 @@ export default function EventComponent({ title, eventId, image, artiste, dateAnd
                                 </FacebookShareButton>
 
                                 <TwitterShareButton
-                                    url={`/eventSummary/${eventId}`}
+                                    url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                     quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                     hashtag="#event">
 
@@ -108,7 +108,7 @@ export default function EventComponent({ title, eventId, image, artiste, dateAnd
                                 </TwitterShareButton>
 
                                 <WhatsappShareButton
-                                    url={`/eventSummary/${eventId}`}
+                                    url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                     quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                     hashtag="#event">
 
@@ -118,7 +118,7 @@ export default function EventComponent({ title, eventId, image, artiste, dateAnd
                                 </WhatsappShareButton>
 
                                 <TelegramShareButton
-                                    url={`/eventSummary/${eventId}`}
+                                    url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                     quote={"You are invited to this" + { title } + "Click to your tickets now"}
                                     hashtag="#event">
 
@@ -128,7 +128,7 @@ export default function EventComponent({ title, eventId, image, artiste, dateAnd
                                 </TelegramShareButton>
 
                                 <EmailShareButton
-                                    url={`/eventSummary/${eventId}`}
+                                    url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                     quote={"You are invited to this" + { title } + "Click to buy your tickets now"}
                                     hashtag="#event">
 

@@ -183,7 +183,7 @@ export default function EventFullDisplay() {
                                         <Icon icon="entypo:share" className='text-2xl cursor-pointer' onClick={popShareDiv} />
                                         <div className={!shareDiv ? 'hidden' : 'p-4 w-full rounded-br-full h-[100px] flex justify-center items-center shadow-xl slide-in-blurred-left'}>
                                             <FacebookShareButton
-                                                url={`/eventSummary/${getPost.eventId}`}
+                                                url={`https://ticketon.emnj.tech/eventSummary/${getPost.eventId}`}
                                                 quote={`You are invited to this  ${ getPost.title } Click to your tickets now`}
                                                 hashtag="#event">
 
@@ -192,7 +192,7 @@ export default function EventFullDisplay() {
                                             </FacebookShareButton>
 
                                             <TwitterShareButton
-                                                url={`/eventSummary/${getPost.eventId}`}
+                                                url={`https://ticketon.emnj.tech/eventSummary/${getPost.eventId}`}
                                                 quote={"hello"}
                                                 hashtag="#programing joke">
 
@@ -202,7 +202,7 @@ export default function EventFullDisplay() {
                                             </TwitterShareButton>
 
                                             <WhatsappShareButton
-                                                url={`/eventSummary/${eventId}`}
+                                                url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                                 quote={"hello"}
                                                 hashtag="#programing joke">
 
@@ -212,7 +212,7 @@ export default function EventFullDisplay() {
                                             </WhatsappShareButton>
 
                                             <TelegramShareButton
-                                                url={`/eventSummary/${eventId}`}
+                                                url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                                 quote={"hello"}
                                                 hashtag="#programing joke">
 
@@ -222,7 +222,7 @@ export default function EventFullDisplay() {
                                             </TelegramShareButton>
 
                                             <EmailShareButton
-                                                url={`/eventSummary/${eventId}`}
+                                                url={`https://ticketon.emnj.tech/eventSummary/${eventId}`}
                                                 quote={"hello"}
                                                 hashtag="#programing joke">
 
@@ -285,12 +285,7 @@ export default function EventFullDisplay() {
                                 <button className='px-5 py-3 rounded-none bg-transparent text-amber-700 hover:text-slate-400 border-t-2 hover:bg-transparent hover:border-t-amber-600 flex justify-center items-center rounded-b-full'
                                     onClick={handleSaveEvent}><Icon icon="fluent:save-20-filled" className='text-[30px]' />Save for later</button>
                                
-                            </div>}
-                   
-                   
-                      
-                  
-                        
+                            </div>}                
 
                         {getPost.ticketFrom === 0 &&
                             <div className=' mt-8'>

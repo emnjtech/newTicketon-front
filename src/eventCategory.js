@@ -5,7 +5,7 @@ const eventCategory = [
 "Music Concerts & Festivals",
 "Food & Beverages",
 "Religion & Spiritual",
-"Outdoor & Picknick",
+"Outdoor & Picnic",
 "Health & Wellness",
 ]
 

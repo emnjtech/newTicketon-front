@@ -107,7 +107,7 @@ export default function App() {
             </>
           } />
 
-          <Route path="Picknics" element={
+          <Route path="Picnics" element={
             <><TopNavBar />
               <Picknics/>
               <Footer />

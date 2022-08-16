@@ -75,7 +75,7 @@ export default function SearchResults() {
 
   return (
     <div className='container mx-auto p-4'>
-      <h1 className='text-sm text-center p-4 font-bold'>Search events by title, venue, Perfoming Artistes/Speakers, country or category</h1>
+      <h1 className='text-sm text-center p-4 font-bold'>Search events by title, venue, Perfoming Artistes/Speakers, state, country or category</h1>
       <div className=' flex justify-center align-center  bg-gradient-to-r from-pink-100'>
         <div className='flex justify-center p-4'>
 
