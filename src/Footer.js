@@ -26,7 +26,7 @@ export default function Footer() {
                 <Slide>
                     <div className=' md:w-[20%] w-full '>
 
-                        <h1 className='text-sm md:text-sm font-bold  text-slate-300'> MENU </h1>
+                        <h1 className='text-sm md:text-sm font-bold p-2 text-slate-300'> MENU </h1>
                         <ul className=' text-white font-bold text-[11px] '>
 
                             

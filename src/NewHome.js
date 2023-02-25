@@ -59,7 +59,7 @@ export default function NewHome() {
     return (
         <div className='container mx-auto'>
             <h1 className='text-2xl text-center p-4 font-bold'>UPCOMING EVENTS </h1>
-            {post? <div className='grid md:grid-cols-3 gap-4 w-[90%] mx-auto p-5'>
+            {post? <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-4 w-[90%] mx-auto p-5'>
                 {post.slice(0, 9).map((item) => (
                     <div> <EventComponent
                         key={item.eventId}

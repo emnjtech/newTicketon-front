@@ -38,11 +38,11 @@ const navigate = useNavigate()
 
 
     return (
-        <div className='w-full h-[80px] z-10 shadow-4xl bg-[#C25DC4]'>
+        <div className='w-full h-[80px] z-10 shadow-4xl bg-[#C25DC4] mx-auto'>
             <div className='md:w-[90%] md:mx-auto '>
 
-                <div className="px-4 flex md:justify-start items-center  h-[80px] w-full ">
-                    <div className=' flex justify-start md:mr-32 mr-7  items-center  '>
+                <div className="px-4 flex md:justify-between items-center  h-[80px] w-full ">
+                    <div className=' flex justify-start mr-7  items-center  '>
                         <Link to="/"><Icon icon="noto-v1:ticket" className='md:text-[55px] text-3xl text-slate-100' /> </Link>
                         <div className='flex '><Link to="/"><h1 className='text-white text-sm md:text-2xl py-4 font-bold'>Ticket</h1></Link><h1 className='py-4 text-yellow-300 font-bold text-sm md:text-2xl'>ON</h1></div>
 
@@ -50,17 +50,17 @@ const navigate = useNavigate()
 
                     </div>
 
-                    <div className='hidden md:flex pr-4'>
-                        <ul className='hidden md:flex justify-between text-[16px] text-white'>
-                            <Link to="/searchResults" ><li className=' hover:text-slate-400 pr-8'>Search events</li></Link>
+                    <div className='hidden md:flex md:justify-center '>
+                        <ul className='hidden md:flex justify-between md:items-center  lg:text-[16px] text-white md:text-[11px]'>
+                            <Link to="/searchResults" ><li className=' hover:text-slate-400 '>Search events</li></Link>
                             <Link to="/reprintTicket"><li className=' hover:text-slate-400'>Re-print ticket</li></Link>
-                            <a href="https://emnj.tech"><li className=' hover:text-slate-400 pl-8'>About Us</li></a>
+                            <a href="https://emnj.tech"><li className=' hover:text-slate-400 '>About Us</li></a>
 
 
                         </ul>
                     </div>
 
-                    <div className='flex justify-between items-center ml-auto '>
+                    <div className='flex justify-between items-center'>
                         {!currUser ? <div className='mr-2 md:w-16 w-10'><Link to="/signIn" ><h1 className=' hover:text-slate-400 md:text-sm text-[11px] font-bold'>Sign In</h1></Link></div> :
                             <Icon onClick={myAccountSwitch} icon="carbon:user-avatar-filled" className='text-3xl mr-[30px] text-white'  />}
                         <div className={!isLoggedIn ? 'hidden' : 'rounded-b-full tilt-in-top-1 z-10 origin-top-right absolute right-[190px] mt-[250px] h-48 w-40 rounded-md bg-[#C25DC4] ring-1 ring-black ring-opacity-5 focus:outline-none'}

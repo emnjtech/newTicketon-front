@@ -33,7 +33,7 @@ function ErrorHandler({ error }) {
 export default function App() {
   return (
     <ErrorBoundary FallbackComponent={ErrorHandler}>
-      <div>
+      <div className='w-full'>
 
 
       
